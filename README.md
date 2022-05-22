@@ -32,12 +32,19 @@ Routing through both stable and volatile pairs
 
 Flashloan proof reserve quoting
 
+# Terminology
 token ~ transferable, used for incentives via emission
+
 ve ~ non-transferable, locked up by depositing base token into the voting escrow contract, period from 1 week to 4 years
+
 ve lockers vote which permissionless pools should be incentivized
+
 ve lockers accumulate all protocol fees
+
 total_supply = token.total_supply
+
 locked_supply = ve.total_supply
+
 circulating_supply = total_supply - locked_supply
 
 # Conclusion
