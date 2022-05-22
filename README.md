@@ -40,6 +40,12 @@ total_supply = token.total_supply
 locked_supply = ve.total_supply
 circulating_supply = total_supply - locked_supply
 
+# Conclusion
+
+If all participants lock, emission decreases to 0, if only 50% of participants lock, emission is 50%, however lockers increase proportionally to emission.
+
+Thus; ve(3,3)
+
 
 
 ## Getting started
