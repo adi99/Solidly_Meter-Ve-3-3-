@@ -1,6 +1,6 @@
 // list of assets we support for providing liquidity to the factory. We will have to expand on this.
 export default [{
-  address: '0xc0a51ac9d548bdcde53fa59448029e41a39feb20',
+  address: '0xb8eBD5E70e8f8a1fc2978Ea32e9866E1deF71a52',
   name: 'MIM',
   symbol: 'MIM',
   decimals: 18,

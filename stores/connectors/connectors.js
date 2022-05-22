@@ -5,15 +5,15 @@ import { NetworkConnector } from "@web3-react/network-connector";
 
 const POLLING_INTERVAL = 12000;
 const RPC_URLS = {
-  250: "https://rpc.ftm.tools",
-  4002: "https://rpc.testnet.fantom.network"
+  83: "http://rpctest.meter.io",
+  82: "https://rpc.meter.io"
 };
 
 let obj = {}
-if(process.env.NEXT_PUBLIC_CHAINID == 250) {
-  obj = { 250: RPC_URLS[250] }
+if(process.env.NEXT_PUBLIC_CHAINID == 83) {
+  obj = { 83: RPC_URLS[83] }
 } else {
-  obj = { 4002: RPC_URLS[4002] }
+  obj = { 82: RPC_URLS[82] }
 }
 
 export const network = new NetworkConnector({ urls: obj });
@@ -24,8 +24,8 @@ export const injected = new InjectedConnector({
 
 export const walletconnect = new WalletConnectConnector({
   rpc: {
-    250: RPC_URLS[250],
-    4002: RPC_URLS[4002]
+    83: RPC_URLS[83],
+    82: RPC_URLS[82]
   },
   chainId: parseInt(process.env.NEXT_PUBLIC_CHAINID),
   bridge: "https://bridge.walletconnect.org",
