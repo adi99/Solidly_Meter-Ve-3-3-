@@ -27,14 +27,20 @@ Solidly adds on the following features;
 Fee split. Fees do not auto accrue, this allows external protocols to be able to profit from the fee claim
 New curve: x3y+y3x, which allows efficient stable swaps
 Curve quoting: y = (sqrt((27 a^3 b x^2 + 27 a b^3 x^2)^2 + 108 x^12) + 27 a^3 b x^2 + 27 a b^3 x^2)^(1/3)/(3 2^(1/3) x) - (2^(1/3) x^3)/(sqrt((27 a^3 b x^2 + 27 a b^3 x^2)^2 + 108 x^12) + 27 a^3 b x^2 + 27 a b^3 x^2)^(1/3)
+
 Routing through both stable and volatile pairs
+
 Flashloan proof reserve quoting
-- [Solidly Smart Contracts](https://github.com/andrecronje/solidly)
-- [ve(3,3)](https://andrecronje.medium.com/ve-3-3-44466eaa088b)
-- [ve(3,3) Ouroboros: Part 1 - Fee Distribution](https://andrecronje.medium.com/ve-3-3-ouroboros-part-1-fee-distribution-5dcf131dc82e)
-- [ve(3,3) Ouroboros: Part 2 - Fees explored](https://andrecronje.medium.com/ve-3-3-ouroboros-part-2-fees-explored-c8e026841ae)
-- [ve(3,3): Curves, Initial distribution, Competition, & Building a protocol for protocols](https://andrecronje.medium.com/ve-3-3-curves-initial-distribution-competition-building-a-protocol-for-protocols-79a1ff1cf1a1)
-- [Solidly: preparation for launch](https://andrecronje.medium.com/solidly-preparation-for-launch-8e653ce8a428)
+
+token ~ transferable, used for incentives via emission
+ve ~ non-transferable, locked up by depositing base token into the voting escrow contract, period from 1 week to 4 years
+ve lockers vote which permissionless pools should be incentivized
+ve lockers accumulate all protocol fees
+total_supply = token.total_supply
+locked_supply = ve.total_supply
+circulating_supply = total_supply - locked_supply
+
+
 
 ## Getting started
 - Make sure to have nodejs installed. This app is built using [Next.js](https://nextjs.org/learn/basics/create-nextjs-app) and [react](https://reactjs.org/docs/getting-started.html).
