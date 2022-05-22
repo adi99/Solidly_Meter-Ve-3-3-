@@ -8,7 +8,8 @@ The above is distributed to the gauge (see below), however LPs will earn between
 
 LPs with 0 ve* balance, will earn a maximum of 40%.
 
-##AMM
+# AMM
+
 What differentiates Solidly's AMM;
 
 Solidly AMMs are compatible with all the standard features as popularized by Uniswap V2, these include;
